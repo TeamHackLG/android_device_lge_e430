@@ -45,6 +45,7 @@ TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/class/android_usb/android0/f_mass_storag
 BOARD_UMS_LUNFILE := /sys/class/android_usb/android0/f_mass_storage/lun/file
 
 # Recovery
+BOARD_USE_CUSTOM_RECOVERY_FONT := \"font_7x16.h\"
 RECOVERY_FSTAB_VERSION = 2
 TARGET_RECOVERY_PIXEL_FORMAT := "RGB_565"
 BOARD_USES_MMCUTILS := true
