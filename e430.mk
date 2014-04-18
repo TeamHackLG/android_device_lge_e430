@@ -16,7 +16,8 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_KERNEL):kernel
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/fstab.vee3e:recovery/root/fstab.vee3e
+    $(LOCAL_PATH)/fstab.vee3e:recovery/root/fstab.vee3e \
+    $(LOCAL_PATH)/recovery/twrp.fstab:recovery/root/etc/twrp.fstab \
 
 $(call inherit-product, build/target/product/full.mk)
 
