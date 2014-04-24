@@ -27,6 +27,9 @@ BOARD_KERNEL_PAGESIZE := 4096
 
 TARGET_PREBUILT_KERNEL := device/lge/e430/kernel
 
+TARGET_KERNEL_CONFIG := vee3-rev_11_led_defconfig
+TARGET_KERNEL_CUSTOM_TOOLCHAIN := arm-eabi-4.4.3
+
 TARGET_GLOBAL_CFLAGS += -mfpu=neon -mfloat-abi=softfp
 TARGET_GLOBAL_CPPFLAGS += -mfpu=neon -mfloat-abi=softfp
 
