@@ -1,7 +1,10 @@
 USE_CAMERA_STUB := true
 
+# inherit
+-include device/lge/msm7x27a-common/BoardConfigCommon.mk
+
 # inherit from the proprietary version
--include vendor/lge/e430/BoardConfigVendor.mk
+-include vendor/lge/400/BoardConfigVendor.mk
 
 TARGET_NO_BOOTLOADER := true
 TARGET_BOARD_PLATFORM := msm7x27a
@@ -26,7 +29,7 @@ BOARD_BOARD_MKBOOTIMG_ARGS := 0x01300000
 BOARD_KERNEL_PAGESIZE := 4096
 
 TARGET_PREBUILT_KERNEL := device/lge/e430/kernel
-
+TARGET_KERNEL_SOURCE := kernel/lge/Iproj
 TARGET_KERNEL_CONFIG := vee3-rev_11_led_defconfig
 TARGET_KERNEL_CUSTOM_TOOLCHAIN := arm-eabi-4.4.3
 
@@ -55,3 +58,6 @@ BOARD_USES_MMCUTILS := true
 BOARD_HAS_LARGE_FILESYSTEM := true
 BOARD_HAS_NO_MISC_PARTITION := true
 BOARD_HAS_NO_SELECT_BUTTON := true
+
+# Assert
+TARGET_OTA_ASSERT_DEVICE := vee3e, vee3
