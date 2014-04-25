@@ -42,6 +42,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/fstab.vee3e:recovery/root/fstab.vee3e
 
+# Wifi
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/prebuilt/wlan.ko:system/lib/modules/wlan.ko
+
 # Enable for debugging
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.debuggable=1 \
