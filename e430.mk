@@ -32,7 +32,7 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/7k_handset.kl:system/usr/keylayout/7k_handset.kl \
-    $(LOCAL_PATH)/configs/e0_keypad.kl:system/usr/keylayout/e0_keypad.kl \
+    $(LOCAL_PATH)/configs/vee3e_keypad.kl:system/usr/keylayout/vee3e_keypad.kl \
     $(LOCAL_PATH)/configs/touch_mcs8000.idc:system/usr/idc/touch_mcs8000.idc \
     $(LOCAL_PATH)/configs/touch_mcs8000.kl:system/usr/keylayout/touch_mcs8000.idc \
     $(LOCAL_PATH)/configs/vold.fstab:system/etc/vold.fstab \
